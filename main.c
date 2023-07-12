@@ -16,18 +16,32 @@
 
 int main(void){
     
-int passLeer, opcion, contador = 0;
+int passLeer, opcion, contador = 0, confirmación = 1;
 char userLeer[20];
 
 do{
-
+    
     printf("Ingrese su usuario:\n");
     scanf("%s", userLeer);
     printf("Ingrese su contraseña:\n");
     scanf("%d", &passLeer);
-    
 
-} while
+    if (strcmp(userLeer, user1) == 0 && passLeer == pass1 || strcmp(userLeer, user2) == 0 && passLeer == pass2 || strcmp(userLeer, user3) == 0 && passLeer == pass3){
+        printf("¡Login Existoso!\n");
+        contador = 3;
+        confirmación = 0;
+
+
+    } else {
+        contador++;
+        printf("Usuario o contraseña incorrectos, intento #%d\n", contador);
+    }
+
+} while (contador != 3);
+
+if (confirmación){
+    return(0);
+}
 
 
 
