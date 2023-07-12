@@ -19,7 +19,15 @@ int main(void){
 int passLeer, opcion, contador = 0;
 char userLeer[20];
 
+do{
 
+    printf("Ingrese su usuario:\n");
+    scanf("%s", userLeer);
+    printf("Ingrese su contraseña:\n");
+    scanf("%d", &passLeer);
+    
+
+} while
 
 
 
