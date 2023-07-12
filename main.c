@@ -43,6 +43,26 @@ if (confirmación){
     return(0);
 }
 
+do{
+    printf("¿Qué desea hacer?\n 1. Venta de entradas\n 2. Estadistica de Entradas\n 3. Salir");
+    scanf("%d", &opcion);
 
+    switch (opcion)
+    {
+    case 1:
+        
+        break;
+
+    case 2:
+
+        break;
+
+    default:
+        printf("Opción no existente\n");
+        break;
+    }
+
+
+} while (opcion != 3);
 
 }
